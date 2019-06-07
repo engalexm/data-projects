@@ -30,6 +30,7 @@ def _to_date(date_str):
     return datetime.date(int(date_split[0]), int(date_split[1]), int(date_split[2]))
 
 # start Selenium webdriver with path to Chrome webdriver
+path_to_chromedriver ="/Users/alexeng/Documents/Python/chromedriver"
 options = webdriver.ChromeOptions()
 # AGRESSIVE: options.setPageLoadStrategy(PageLoadStrategy.NONE); # https://www.skptricks.com/2018/08/timed-out-receiving-message-from-renderer-selenium.html
 options.add_argument("start-maximized") # https://stackoverflow.com/a/26283818/1689770
